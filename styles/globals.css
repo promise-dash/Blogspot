@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+  border-radius: 4px; 
+}
+
+.ql-container{
+  border: none !important;
+}
+
+.ql-editor {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: black;
+}
