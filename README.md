@@ -1,3 +1,18 @@
+# Blogspot
+A Full Stack Blogging App
+
+## Functionalities
+* CRUD
+* User Authentication
+* Multimedia Files Upload
+* User Profile View
+* React Quill Editor
+
+
+<img width="960" alt="bg" src="https://github.com/promise-dash/Blogspot/assets/86062880/fa4151c9-115d-4523-aaba-c0215824cf6d">
+
+## 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
