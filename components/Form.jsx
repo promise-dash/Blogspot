@@ -42,7 +42,7 @@ const Form = ({ type, post, setPost, imageRef, coverImage, setCoverImage, previe
     return (
     <form onSubmit={handleSubmit} className="mb-[10px]">
 
-        <div className='flex items-center justify-between px-[20px] py-[10px] gap-20'>
+        <div className='px-7 py-[7px] flex items-center justify-between md:px-[20px] md:py-[10px] gap-20'>
             <div className='cursor-pointer' onClick={() => router.back()}>
                 <AiOutlineArrowLeft style={{fontSize: '1.5rem'}}/>
             </div>
@@ -64,7 +64,7 @@ const Form = ({ type, post, setPost, imageRef, coverImage, setCoverImage, previe
             </div>
         </div>
 
-        <div className='flex flex-col gap-5 max-w-[70%] m-auto mt-[3rem]'>
+        <div className='max-w-[90%] flex flex-col gap-5 md:max-w-[80%] lg:max-w-[70%] m-auto mt-[3rem]'>
             <button className='flex items-center gap-2 px-[17px] py-[7px] border-[1px] w-fit rounded-3xl cursor-pointer'
             onClick={() => imageRef.current.click()}
             >

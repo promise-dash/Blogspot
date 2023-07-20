@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <section className="relative">
      <Navbar session={session}/>
-     <div className='px-[1.2rem] mt-[1.5rem] flex gap-3'>
+     <div className='px-2 md:px-6 mt-4 md:mt-6 flex gap-3'>
         <Menubar />
         <Feed />
         <Widgets />

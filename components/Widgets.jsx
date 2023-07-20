@@ -5,7 +5,7 @@ import {BiTrendingUp} from "react-icons/bi"
 const Widgets = () => {
 
   return (
-    <section className='basis-[18%] border-[1px] p-[10px] rounded-lg h-fit sticky top-[17%]'>
+    <section className='hidden md:block basis-[18%] border-[1px] rounded-lg py-[10px] h-fit lg:sticky top-[17%]'>
       <div className='flex items-center justify-start gap-3 mb-[10px]'>
         <h3 className='text-xl'>Trending tags</h3>
         <BiTrendingUp className='text-xl'/>

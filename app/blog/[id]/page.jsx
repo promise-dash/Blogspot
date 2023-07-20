@@ -30,9 +30,9 @@ const BlogPost = (props) => {
   return (
     <section>
       <Navbar blogPage={true} creator={blogDetails.creator}/>
-      <div className='max-w-[70%] m-auto mt-[1.5rem] relative'>
-        <img className='h-[30rem] w-full mb-[3rem] rounded-2xl' src={blogDetails?.image} alt="" />
-        <h1 className='text-center text-5xl font-bold mb-[3rem]'>{blogDetails?.title}</h1>
+      <div className='max-w-[90%] md:max-w-[80%] lg:max-w-[70%] m-auto mt-[1.5rem] relative'>
+        <img className='h-[15rem] md:h-[25rem] lg:h-[30rem] w-full mb-[3rem] rounded-2xl' src={blogDetails?.image} alt="" />
+        <h1 className='text-center text-4xl md:text-5xl font-bold mb-[3rem]'>{blogDetails?.title}</h1>
         <div className='flex items-center justify-evenly'>
           <div className='flex items-center gap-3'>
             <img className='w-[2.7rem] h-[2.7rem] rounded-3xl' src={blogDetails?.creator?.image} alt="" />

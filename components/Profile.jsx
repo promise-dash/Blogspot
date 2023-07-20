@@ -31,12 +31,12 @@ const Profile = ({ name, data, desc, handleEdit, handleDelete }) => {
         </Link>
       </nav>
       
-      <div className='max-w-[80%] m-auto mt-[3rem]'>
+      <div className='max-w-[90%] md:max-w-[80%] m-auto mt-[3rem]'>
         <p className=''>{
           data?.length === 0 ? 'You have not created any blog yet' : desc
         }</p>
         <br />
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
         {data.map((post) => {
             return(
               <BlogCard 

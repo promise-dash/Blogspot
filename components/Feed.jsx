@@ -24,7 +24,7 @@ const Feed = () => {
 
 
   return (
-    <section className='basis-[64%] border-[1px] rounded-lg'>
+    <section className='w-full lg:basis-[64%] border-[1px] rounded-lg'>
       <div className='w-full'>
       <div className='flex items-center justify-between px-[20px] pt-[20px] pb-[10px] border-b-[1px] text-lg'>
         <div className='flex items-center gap-7'>
@@ -41,7 +41,7 @@ const Feed = () => {
             <p>Recent</p>
           </button>
         </div>
-        <div className='flex items-center gap-10'>
+        <div className='hidden lg:flex items-center gap-10'>
           <button className='flex items-center gap-1'>
             <FiFilter />
           </button>

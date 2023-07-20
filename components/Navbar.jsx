@@ -18,7 +18,7 @@ const Navbar = ({ session, blogPage, creator }) => {
  const [toggleDropdown, setToggleDropdown] = useState(false);
 
   return (
-    <nav className={`flex items-center justify-between border-b-[1px] px-[1.5rem] py-[15px] left-0 top-0 right-0 z-10`}
+    <nav className={`p-2 flex items-center justify-between border-b-[1px] md:px-[1.5rem] md:py-[15px] left-0 top-0 right-0 z-10`}
     style={{position : blogPage ? '' : 'sticky', backgroundColor: blogPage ? '#2962FF' : 'white', color: blogPage? 'white': 'black'}}
     >
         <div>
@@ -29,24 +29,24 @@ const Navbar = ({ session, blogPage, creator }) => {
                         <AiOutlineArrowLeft style={{fontSize: '1.5rem'}}/>
                     </div>
                     <div className='flex gap-3 items-center'>
-                        <div className='w-[2.5rem] h-[2.5rem] rounded-3xl'>
+                        <div className='w-[2rem] h-[2rem] md:w-[2.5rem] md:h-[2.5rem] rounded-3xl'>
                             <img className='rounded-3xl' src={creator?.image} alt="" />
                         </div>
                         <div>
-                            <p className='text-base font-semibold'>{creator?.username}</p>
-                            <p className='text-xs'>{creator?.email}</p>
+                            <p className='text-sm md:text-base font-semibold'>{creator?.username}</p>
+                            <p className='text-[10px] md:text-xs'>{creator?.email}</p>
                         </div>
                     </div>
                 </div>
                 : <div className='flex items-center justify-start gap-[1px]'>
                     <AiFillFire style={{color:'#2962FF', fontSize: '2rem'}}/>
-                    <h2 className='text-3xl font-black'>blogspot</h2>
+                    <h2 className='text-xl md:text-3xl font-black'>blogspot</h2>
                   </div>
             }
         </div>
 
         {!blogPage ?
-            <div className={`p-[10px] w-[55%] rounded-3xl border-[1.5px] flex gap-2 items-center`}>
+            <div className={`hidden md:flex p-[10px] w-[55%] rounded-3xl border-[1.5px] gap-2 items-center`}>
                 <CiSearch className='text-lg'/>
                 <input type="text" placeholder='Search for tags, people, articles and many more' className='w-full outline-none bg-transparent'/>
             </div>
@@ -54,7 +54,7 @@ const Navbar = ({ session, blogPage, creator }) => {
         }
 
         <div className='flex items-center justify-center gap-2'>
-            <Link href='/draft' className='flex items-center justify-center gap-2 px-[17px] py-[10px] bg-[#2962FF] hover:bg-[#3b6fff] text-white rounded-3xl mr-5'
+            <Link href='/draft' className='px-[10px] py-[7px] flex items-center justify-center gap-2 md:px-[17px] md:py-[10px] bg-[#2962FF] hover:bg-[#3b6fff] text-white rounded-3xl lg:mr-5'
              style={{visibility: blogPage ? 'hidden' : 'visible'}}
             >
                 <BsFillPencilFill />
@@ -63,9 +63,11 @@ const Navbar = ({ session, blogPage, creator }) => {
 
             {!blogPage &&
                 <div className='flex items-center justify-center gap-4'>
-                    <BiGitBranch style={{fontSize: '25px', cursor: 'pointer'}}/>
-                    <IoMdNotifications style={{fontSize: '25px', cursor: 'pointer'}}/>
-                    <BsFillMoonFill style={{fontSize: '20px', cursor: 'pointer'}}/>
+                    <div className="hidden lg:flex items-center justify-center gap-4">
+                        <BiGitBranch style={{fontSize: '25px', cursor: 'pointer'}}/>
+                        <IoMdNotifications style={{fontSize: '25px', cursor: 'pointer'}}/>
+                        <BsFillMoonFill style={{fontSize: '20px', cursor: 'pointer'}}/>
+                    </div>
 
                     <div className="flex">
                         <button>

@@ -31,7 +31,7 @@ const BlogCard = ({ post: {_id, creator, title, content, image}, handleEdit, han
                     <p className={`${profilePage ? 'text-[10px]' : 'text-xs'}`}>{creator?.email}</p>
                 </div>
             </div>
-            <Link href={`/blog/${_id}`} className={`flex ${profilePage ? 'flex-col-reverse p-[5px]' : 'gap-3'}`}>
+            <Link href={`/blog/${_id}`} className={`flex ${profilePage ? 'flex-col-reverse p-5' : 'flex-col sm:flex-row gap-3'}`}>
                 <div className='basis-[60%]'>
                         <h3 className={`${profilePage ? 'text-[1.3rem]' : 'text-[1.7rem]'} max-w-[90%] mb-[0.5rem] font-bold`}>{
                             profilePage 
@@ -46,7 +46,7 @@ const BlogCard = ({ post: {_id, creator, title, content, image}, handleEdit, han
                 </div>
                 {profilePage ? 
                     <img src={image} width='100%' className='rounded-xl mb-4'/> :
-                    <div className='basis-[40%] h-[10rem] rounded-xl' style={{backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:'center'}}></div>
+                    <div className='md:basis-[40%] h-[10rem] rounded-xl' style={{backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition:'center'}}></div>
                 }
             </Link>
             <br />
