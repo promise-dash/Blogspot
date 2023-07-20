@@ -1,3 +1,25 @@
+# Blogspot
+A Full Stack Blogging App
+
+## Functionalities
+* CRUD
+* User Authentication
+* Multimedia Files Upload
+* User Profile View
+* React Quill Editor
+
+
+<img width="960" alt="bg" src="https://github.com/promise-dash/Blogspot/assets/86062880/fa4151c9-115d-4523-aaba-c0215824cf6d">
+
+## 
+
+## Prerequisites
+
+Before running the application, make sure you have the following installed on your machine:
+
+- Node.js: https://nodejs.org
+- MongoDB: https://www.mongodb.com
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +54,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
