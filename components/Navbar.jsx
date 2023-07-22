@@ -108,4 +108,4 @@ const Navbar = ({ session, blogPage, creator }) => {
   )
 }
 
-export default Navbar
+export default Navbar;
