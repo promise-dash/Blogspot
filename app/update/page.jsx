@@ -45,7 +45,30 @@ const Update = () => {
     if(blogId) getBlogDetails();
   }, [blogId]);
   
+  const uploadImage = async () => {
 
+    const formData = new FormData();
+
+    formData.append("file", coverImage);
+    formData.append("upload_preset", UPLOAD_PRESET);
+
+    try {
+      const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
+        method: "POST",
+        body: formData
+      })
+
+      const data = await res.json();
+
+      const imageUrl = data['secure_url'];
+
+      return imageUrl;
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  
   const updateBlog = async (e) => {
     e.preventDefault();
     setSubmitting(true);
@@ -74,29 +97,6 @@ const Update = () => {
       setSubmitting(false);
     }
   };
-
-  const uploadImage = async () => {
-
-    const formData = new FormData();
-
-    formData.append("file", coverImage);
-    formData.append("upload_preset", UPLOAD_PRESET);
-
-    try {
-      const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
-        method: "POST",
-        body: formData
-      })
-
-      const data = await res.json();
-
-      const imageUrl = data['secure_url'];
-
-      return imageUrl;
-    } catch (error) {
-        console.log(error)
-    }
-}
 
   return (
     <Form 
