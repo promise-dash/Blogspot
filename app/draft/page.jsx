@@ -10,8 +10,8 @@ const Draft = () => {
   const { data: session } = useSession({ required: true });
   const router = useRouter();
   const imageRef = useRef();
-  const [coverImage, setCoverImage] = useState(null);
-  const [previewImage, setPreviewImage] = useState(null);
+  const [coverImage, setCoverImage] = useState('');
+  const [previewImage, setPreviewImage] = useState('');
   const [post, setPost] = useState({title: "", content: ""});
   const [submitting, setSubmitting] = useState(false);
 
