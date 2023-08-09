@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useRef, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -68,7 +68,7 @@ const Update = () => {
     }
   }
 
-  
+
   const updateBlog = async (e) => {
     e.preventDefault();
     setSubmitting(true);
@@ -115,4 +115,4 @@ const Update = () => {
   )
 } 
 
-export default Update
+export default Update;

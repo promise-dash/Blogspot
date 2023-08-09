@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useRef } from "react";
 import { useSession } from "next-auth/react";
@@ -10,8 +10,8 @@ const Draft = () => {
   const { data: session } = useSession({ required: true });
   const router = useRouter();
   const imageRef = useRef();
-  const [coverImage, setCoverImage] = useState('');
-  const [previewImage, setPreviewImage] = useState('');
+  const [coverImage, setCoverImage] = useState(null);
+  const [previewImage, setPreviewImage] = useState(null);
   const [post, setPost] = useState({title: "", content: ""});
   const [submitting, setSubmitting] = useState(false);
 
@@ -96,4 +96,4 @@ const Draft = () => {
   )
 } 
 
-export default Draft
+export default Draft;
